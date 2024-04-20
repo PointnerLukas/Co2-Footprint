@@ -12,11 +12,17 @@
     <title>Co2-Footprint</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Titel und Logo Einbinden Aufgabe 1 end -->
+
+    <!-- jquery und mySript einbindung -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="myScript.js"></script>
+    <!-- jquery und Script für Table_Search end -->
 </head>
 
 <body >
+<header>
 <!-- NAVBAR Header Begin -->
-    <nav class="navbar fixed-top navbar-expand-sm navbar-light " style="background: beige">
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background: beige">
         <a href="#" class="navbar-brand mb-0 h1"><img class="d-inline-block align-top" src="CO2_Logo.png" width="30" height="30"> Footprint </a>
         <button type="button" data-toggle="collapse" data-target="#navbarNav" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
@@ -24,33 +30,456 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav active">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active"> Contact</a>
+                    <a href="Contact.html" class="nav-link active"> Contact</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-toggle="dropdown"> Social Media</a>
+                    <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-toggle="dropdown"> Social Media</a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#" class="dropdown-item">Instagram</a>
+                            <a href="https://www.instagram.com/" class="dropdown-item">Instagram</a>
                         </li>
                         <li>
-                            <a href="#" class="dropdown-item">Facebook</a>
+                            <a href="https://www.facebook.com/?locale=de_DE" class="dropdown-item">Facebook</a>
                         </li>
                         <li>
-                            <a href="#" class="dropdown-item">LinkedIn</a>
+                            <a href="https://at.linkedin.com/" class="dropdown-item">LinkedIn</a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <form class="d-flex">
-            <input type="text" class="form-control me-2">
-            <button type="submit" class="btn mx-2">Search</button>
-        </form>
     </nav>
+</header>
 <!-- NAVBAR Header End -->
 
 
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+            <div class="p-2 mt-5 position-fixed" style="background: beige; height: 1000px">
+                <a class="d-flex text-decoration-none mt-2 align-items-center">
+                    <span class="fs-4 d-sm-inline position-fixed">Menu</span>
+                </a>
+                <ul class="nav nav-pills flex-column mt-4">
+                    <li class="nav-item">
+                        <a class="nav link" style="color: gray">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Companies.html" class="nav link" style="color: black" >Companies</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="AboutUs.html" class="nav link" style="color: black" >About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="JoinUs.html" class="nav link" style="color: black" >Join us!</a>
+                    </li>
+                </ul>
+            </div>
+        <!-- Content Area Start -->
+        <div class="row ml-5 pl-5 mt-5 pt-3 flex-wrap table-responsive">
+            <div class="col-auto">
+                <div class="container-fluid">
+                    <h2>MAKE CO2 PUBLIC!</h2>
+                    <i class="flag flag-united-states"></i>
+                    <p>Our primary concern is examining the Co2 consumption of big global companies and presenting the data to public, please use our Table to find the necessary information:</p>
+                    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                    <br>
+                    <table class="table table-bordered table-striped table-sm">
+                        <thead>
+                        <tr>
+                            <th>Companie</th>
+                            <th>tC02</th>
+                            <th>Origin</th>
 
+                        </tr>
+                        </thead>
+                        <tbody id="myTable">
+                        <tr>
+                            <td>Walmart</td>
+                            <td>100,5</td>
+                            <td>USA <img class="img-responsive " style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/> </td>
+
+                        </tr>
+                        <tr>
+                            <td>Saudi Aramco</td>
+                            <td>80,4</td>
+                            <td>SAU <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                    alt="Saudi Arabia"
+                                    src="https://purecatamphetamine.github.io/country-flag-icons/3x2/SA.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>State Grid</td>
+                            <td>30,5</td>
+                            <td>CHN <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="China"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Amazon</td>
+                            <td>150,2</td>
+                            <td>USA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Sinopec</td>
+                            <td>77,9</td>
+                            <td>CHN <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="China"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/CN.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Exxon</td>
+                            <td>84,7</td>
+                            <td>USA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Apple</td>
+                            <td>180,1</td>
+                            <td>USA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Shell</td>
+                            <td>336,9</td>
+                            <td>GBR <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Great Britain"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Trafigura</td>
+                            <td>12,7</td>
+                            <td>NLD <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Netherlands"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/NL.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Volkswagen</td>
+                            <td>76,9</td>
+                            <td>DEU <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Germany"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/DE.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Uniper</td>
+                            <td>45,1</td>
+                            <td>DEU <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Germany"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/DE.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Alphabet</td>
+                            <td>234,8</td>
+                            <td>USA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>McKesson</td>
+                            <td>63,9</td>
+                            <td>USA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Toyota</td>
+                            <td>145,7</td>
+                            <td>JPN <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Japan"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/JP.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>TotalEnergies</td>
+                            <td>96,3</td>
+                            <td>FRA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="France"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/FR.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Glencore</td>
+                            <td>67,4</td>
+                            <td>CHE <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Switzerland"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/CH.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>BP</td>
+                            <td>406,2</td>
+                            <td>GBR <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Great Britain"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/GB.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Chevron</td>
+                            <td>120,9</td>
+                            <td>USA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                        alt="United States"
+                                        src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Samsung</td>
+                            <td>89,1</td>
+                            <td>KOR <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="South Korea"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/KR.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Foxconn</td>
+                            <td>76,4</td>
+                            <td>TWN <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Taiwan"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/TW.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>ICBC</td>
+                            <td>132,8</td>
+                            <td>CHN <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="China"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/CH.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Microsoft</td>
+                            <td>203,5</td>
+                            <td>USA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Stellantis</td>
+                            <td>143,9</td>
+                            <td>NLD <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Netherlands"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/NL.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>CIGNA</td>
+                            <td>56,2</td>
+                            <td>USA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Phillips 66</td>
+                            <td>74,9</td>
+                            <td>USA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Sinochem</td>
+                            <td>59,8</td>
+                            <td>CHN <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="China"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/CH.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Gazprom</td>
+                            <td>298,3</td>
+                            <td>RUS <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Russia"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/RU.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Mitsubishi</td>
+                            <td>167,9</td>
+                            <td>JPN <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Japan"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/JP.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Ford</td>
+                            <td>65,1</td>
+                            <td>USA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/US.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Mercedes</td>
+                            <td>87,4</td>
+                            <td>DEU <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Germany"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/DE.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Equinor</td>
+                            <td>67,3</td>
+                            <td>NOR <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Norway"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/NO.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>BMW</td>
+                            <td>148,8</td>
+                            <td>DEU <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Germany"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/DE.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Enel</td>
+                            <td>34,7</td>
+                            <td>ITA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Italy"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/IT.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Petrobas</td>
+                            <td>97,4</td>
+                            <td>BRA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Brazil"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/BR.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>PEMEX</td>
+                            <td>65,2</td>
+                            <td>MEX <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Mexico"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/ME.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Inditex</td>
+                            <td>34,7</td>
+                            <td>ESP <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                        alt="Spain"
+                                        src="https://purecatamphetamine.github.io/country-flag-icons/3x2/ES.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>SAP</td>
+                            <td>85,4</td>
+                            <td>DEU <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Germany"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/DE.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Vale</td>
+                            <td>123,5</td>
+                            <td>BRA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Brazil"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/BR.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Shopify</td>
+                            <td>305,8</td>
+                            <td>CAN <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Canada"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/CA.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Nordea</td>
+                            <td>99,2</td>
+                            <td>FIN <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Finland"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/FI.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Naspers</td>
+                            <td>21,4</td>
+                            <td>ZAF <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="South Africa"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/ZA.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Equinor</td>
+                            <td>90,9</td>
+                            <td>NOR <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Norway"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/NO.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Atlas Copco</td>
+                            <td>34,7</td>
+                            <td>SWE <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="United States"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/SE.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Dangote</td>
+                            <td>87,5</td>
+                            <td>NGA <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Nigeria"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/NG.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>Ecopetrol</td>
+                            <td>59,3</td>
+                            <td>COL <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Columbia"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/CO.svg"/></td>
+
+                        </tr>
+                        <tr>
+                            <td>QNB</td>
+                            <td>88,7</td>
+                            <td>QAT <img class="img-responsive" style="height: 1em; border: solid 1px #555"
+                                         alt="Catar"
+                                         src="https://purecatamphetamine.github.io/country-flag-icons/3x2/QA.svg"/></td>
+
+                        </tr>
+
+                        </tbody>
+                    </table>
+            </div>
+        </div>
+        </div>
+        <!-- Content Area End -->
+    </div>
+</div>
+
+
+<footer style="background: white; bottom: 0; width: 100%; height: 60px; line-height: 60px;">
+    <nav>
+        <ul class="text-right">
+            <li class="d-inline m-2"><a href="privacy.html" style="color: black">Datenschutz</a></li>
+            <li class="d-inline mr-4"><a href="imprint.html" style="color: black">Impressum</a></li>
+        </ul>
+    </nav>
+</footer>
 
 
 <!-- Optional JavaScript -->
