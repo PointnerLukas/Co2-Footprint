@@ -1,14 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- Titel und Logo Einbinden Aufgabe 1 begin -->
-    <title>Datenschutz</title>
+    <title>Privacy</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Titel und Logo Einbinden Aufgabe 1 end -->
+
+    <!-- jquery und mySript einbindung -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="myScript.js"></script>
+    <!-- jquery und Script für Table_Search und Herkunfts_Ermittlung end -->
 </head>
 <body>
 
+<!-- NAVBAR Header Begin -->
+<nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background: beige">
+    <a href="Footprint.html" class="navbar-brand mb-0 h1"><img class="d-inline-block align-top" src="CO2_Logo.png" width="30" height="30"> Footprint </a>
+    <button type="button" data-toggle="collapse" data-target="#navbarNav" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav active">
+            <li class="nav-item">
+                <a href="Contact.html" class="nav-link active"> Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-toggle="dropdown"> Social Media</a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="https://www.instagram.com/" class="dropdown-item">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/?locale=de_DE" class="dropdown-item">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="https://at.linkedin.com/" class="dropdown-item">LinkedIn</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+</header>
+<!-- NAVBAR Header End -->
+
+<div class="container-fluid">
+    <div id="Main-Menu" class="row flex-nowrap">
+        <div class="p-2 mt-5 position-fixed" style="background: beige; height: 1000px">
+            <a class="d-flex text-decoration-none mt-2 align-items-center">
+                <span class="fs-4 d-sm-inline position-fixed">Menu</span>
+            </a>
+            <ul class="nav nav-pills flex-column mt-4">
+                <li class="nav-item">
+                    <a href="Footprint.html" class="nav link" style="color: black">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Companies.html" class="nav link" style="color: black" >Companies</a>
+                </li>
+                <li class="nav-item">
+                    <a href="AboutUs.html" class="nav link" style="color: black" >About us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="JoinUs.html" class="nav link" style="color: black" >Join us!</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Content Area Start -->
+        <div id="Main-Content" class="row ml-5 pl-5 mt-5 pt-3 flex-wrap table-responsive">
+            <div class="col-auto">
+                <div class="container-fluid">
+                    <h1>Privacy Policy</h1>
+                    <h2>1. Introduction</h2>
+                    <p>We are pleased that you are interested in our website. Protecting your privacy is important to us. Below, we provide detailed information on how we handle your data.</p>
+
+                    <h2>2. Responsible Entity</h2>
+                    <p>The responsible entity for data processing on this website is:</p>
+                    <p>
+                        Footprint<br>
+                        Street: Footprint Avenue 1<br>
+                        State: Sunstate 1234<br>
+                        Country: World
+                        <br>
+                        <a href="mailto:[Email Address]">office@footprint.com</a><br>
+                        +11 11111111 11111
+                    </p>
+
+                    <h2>3. Collection and Storage of Personal Data</h2>
+                    <h3>a) When Visiting the Website</h3>
+                    <p>
+                        When you access our website [Domain Name], information is automatically sent to the server of our website by the browser on your end device. This information is temporarily stored in a so-called log file. The following information is collected without your intervention and stored until automated deletion:
+                    </p>
+                    <ul>
+                        <li>IP address of the requesting computer,</li>
+                        <li>Date and time of access,</li>
+                        <li>Name and URL of the retrieved file,</li>
+                        <li>Website from which access is made (referrer URL),</li>
+                        <li>Browser used and, if applicable, the operating system of your computer as well as the name of your access provider.</li>
+                    </ul>
+                    <p>
+                        We process the aforementioned data for the following purposes:
+                    </p>
+                    <ul>
+                        <li>Ensuring a smooth connection setup of the website,</li>
+                        <li>Ensuring convenient use of our website,</li>
+                        <li>Evaluating system security and stability, and</li>
+                        <li>For other administrative purposes.</li>
+                    </ul>
+                    <p>
+                        The legal basis for data processing is Art. 6 para. 1 sentence 1 lit. f GDPR. Our legitimate interest arises from the aforementioned purposes for data collection.
+                    </p>
+
+                    <h3>b) When Using Our Contact Form</h3>
+                    <p>
+                        If you have any questions, we offer you the opportunity to contact us via a form provided on the website. Providing a valid email address is required so that we know who the request is coming from and can respond to it. Additional information can be provided voluntarily.
+                    </p>
+                    <p>
+                        The data processing for the purpose of contacting us is carried out in accordance with Art. 6 para. 1 sentence 1 lit. a GDPR based on your voluntarily given consent.
+                    </p>
+
+                    <h2>4. Data Disclosure</h2>
+                    <p>
+                        We do not transmit your personal data to third parties for purposes other than those listed below. We only disclose your personal data to third parties if:
+                    </p>
+                    <ul>
+                        <li>You have given your express consent pursuant to Art. 6 para. 1 sentence 1 lit. a GDPR,</li>
+                        <li>Disclosure pursuant to Art. 6 para. 1 sentence 1 lit. f GDPR is necessary to assert, exercise or defend legal claims and there is no reason to assume that you have an overriding interest worthy of protection in not disclosing your data,</li>
+                        <li>There is a legal obligation to disclose data pursuant to Art. 6 para. 1 sentence 1 lit. c GDPR, and</li>
+                        <li>This is legally permissible and required for the processing of contractual relationships with you pursuant to Art. 6 para. 1 sentence 1 lit. b GDPR.</li>
+                    </ul>
+
+                    <h2>5. Cookies</h2>
+                    <p>
+                        We use cookies on our website. These are small files that your browser automatically creates and that are stored on your end device (laptop, tablet, smartphone, etc.) when you visit our site. Cookies do not cause any damage to your end device, do not contain viruses, trojans, or other malware.
+                    </p>
+                    <p>
+                        Information about the cookies used and the possibility to adjust your cookie settings can be found in our <a href="[Link to Cookie Policy]">Cookie Policy</a>.
+                    </p>
+
+                    <h2>6. Rights of Data Subjects</h2>
+                    <p>You have the right:</p>
+                    <ul>
+                        <li>to request information about your personal data processed by us in accordance with Art. 15 GDPR,</li>
+                        <li>to demand without delay the correction of incorrect or completion of your personal data stored by us in accordance with Art. 16 GDPR,</li>
+                        <li>to demand the deletion of your personal data stored by us in accordance with Art. 17 GDPR,</li>
+                        <li>to demand the restriction of the processing of your personal data in accordance with Art. 18 GDPR,</li>
+                        <li>to receive your personal data that you have provided to us in a structured, common, and machine-readable format or to request the transfer to another responsible party in accordance with Art. 20 GDPR,</li>
+                        <li>to revoke your once given consent to us at any time in accordance with Art. 7 para. 3 GDPR, and</li>
+                        <li>to complain to a supervisory authority in accordance with Art. 77 GDPR.</li>
+                    </ul>
+
+                    <h2>7. Data Security</h2>
+                    <p>
+                        We use the widely used SSL (Secure Socket Layer) method within the website visit in conjunction with the highest encryption level supported by your browser.
+                    </p>
+
+                    <h2>8. Updating and Changing this Privacy Policy</h2>
+                    <p>
+                        This privacy policy is currently valid and has the status of May 2024. Due to the further development of our website and offers above or due to changed legal or official requirements, it may become necessary to change this privacy policy.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Content Area End -->
+    </div>
+</div>
+
+<footer style="background: white; bottom: 0; width: 100%; height: 60px; line-height: 60px;">
+    <nav>
+        <ul class="text-center">
+            <li class="d-inline m-2"><a style="color: grey">Privacy</a></li>
+            <li class="d-inline mr-4"><a href="imprint.html" style="color: black">Imprint</a></li>
+        </ul>
+    </nav>
+</footer>
+
 </body>
 </html>
+

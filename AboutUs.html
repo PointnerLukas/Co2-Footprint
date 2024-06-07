@@ -13,6 +13,11 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Titel und Logo Einbinden Aufgabe 1 end -->
 
+    <!-- jquery und mySript einbindung -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="myScript.js"></script>
+    <!-- jquery und Script für Table_Search und Herkunfts_Ermittlung end -->
+
 </head>
 
 <body>
@@ -20,7 +25,7 @@
 <header>
     <!-- NAVBAR Header Begin -->
     <nav class="navbar navbar-expand-sm navbar-light fixed-top " style="background: beige">
-        <a href="#" class="navbar-brand mb-0 h1"><img class="d-inline-block align-top" src="CO2_Logo.png" width="30" height="30"> Footprint </a>
+        <a href="Footprint.html" class="navbar-brand mb-0 h1"><img class="d-inline-block align-top" src="CO2_Logo.png" width="30" height="30"> Footprint </a>
         <button type="button" data-toggle="collapse" data-target="#navbarNav" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,7 +55,7 @@
 <!-- NAVBAR Header End -->
 
 <div class="container-fluid">
-    <div class="row flex-nowrap">
+    <div id="Main-Menu" class="row flex-nowrap">
         <div class="p-2 mt-5 position-fixed" style="background: beige; height: 1000px">
             <a class="d-flex text-decoration-none mt-2 align-items-center">
                 <span class="fs-4 d-sm-inline position-fixed">Menü</span>
@@ -71,28 +76,29 @@
             </ul>
         </div>
         <!-- Content Area Start -->
-        <div class="row ml-5 pl-5 mt-5 pt-3 flex-wrap table-responsive">
+        <div id="Main-Content" class="row ml-5 pl-5 mt-5 pt-3 flex-wrap table-responsive">
             <div class="col-auto">
                 <div class="container-fluid">
-                    <a>About us</a>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
-                    <p>ddkd</p>
+                    <h4>About us and our Motivation!</h4>
+                    <p></p>
+                    <p>Our company was founded with a clear and compelling mission: to monitor CO2 emissions from large corporations and publish these values on our website.</p>
+                    <p>Here's what drives us:</p>
+                    <br>
+                    <b>Environmental Responsibility</b>
+                    <p>We are deeply committed to environmental responsibility. Climate change is one of the greatest challenges of our time, and reducing carbon emissions is crucial to mitigating its impacts. By monitoring and publicizing CO2 emissions, we aim to hold large corporations accountable for their environmental impact. This transparency encourages businesses to adopt greener practices and reduce their carbon footprint, contributing to the global effort to combat climate change.</p>
+                    <br>
+                    <b>Empowering Consumers</b>
+                    <p>We believe in the power of informed consumers. Today’s market demands transparency, and people want to know about the environmental practices of the companies they support. By providing accurate and accessible CO2 emissions data, we empower consumers to make informed choices. This transparency can drive consumer behavior towards supporting environmentally responsible businesses, creating a market incentive for corporations to improve their sustainability efforts.</p>
+                    <br>
+                    <b>Supporting Regulatory Compliance</b>
+                    <p>As governments worldwide implement stricter regulations on carbon emissions, our services help large firms stay compliant. By offering precise and reliable CO2 monitoring, we help companies avoid potential fines and penalties. Moreover, we aim to set industry standards for environmental reporting, promoting best practices across various sectors.</p>
+                    <br>
+                    <b>Leveraging Technological Innovation</b>
+                    <p>The advancement of monitoring technologies and data analytics opens up unique opportunities. We utilize these technologies to provide accurate and real-time CO2 monitoring, meeting the growing demand for such services. Our technological capabilities not only set us apart but also establish us as leaders in environmental innovation.</p>
+                    <br>
+                    <b>Enhancing Corporate Social Responsibility</b>
+                    <p>We assist companies in enhancing their corporate social responsibility (CSR) and brand image. Transparency about environmental impact and active efforts to reduce emissions can significantly improve a company's public image and build trust with stakeholders. By offering a platform for CO2 monitoring and reporting, we help large firms demonstrate their commitment to sustainability, thereby enhancing their reputation and customer loyalty.</p>
+
                 </div>
             </div>
         </div>
@@ -102,9 +108,9 @@
 
 <footer style="background: white; bottom: 0; width: 100%; height: 60px; line-height: 60px;">
     <nav>
-        <ul class="text-right">
-            <li class="d-inline m-2"><a href="privacy.html" style="color: black">Datenschutz</a></li>
-            <li class="d-inline mr-4"><a href="imprint.html" style="color: black">Impressum</a></li>
+        <ul class="text-center">
+            <li class="d-inline m-2"><a href="privacy.html" style="color: black">Privacy</a></li>
+            <li class="d-inline mr-4"><a href="imprint.html" style="color: black">Imprint</a></li>
         </ul>
     </nav>
 </footer>

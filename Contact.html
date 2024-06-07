@@ -13,6 +13,11 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Titel und Logo Einbinden Aufgabe 1 end -->
 
+    <!-- jquery und mySript einbindung -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="myScript.js"></script>
+    <!-- jquery und Script für Table_Search und Herkunfts_Ermittlung end -->
+
 </head>
 
 <body>
@@ -20,7 +25,7 @@
 <header>
     <!-- NAVBAR Header Begin -->
     <nav class="navbar navbar-expand-sm navbar-light fixed-top" style="background: beige">
-        <a href="#" class="navbar-brand mb-0 h1"><img class="d-inline-block align-top" src="CO2_Logo.png" width="30" height="30"> Footprint </a>
+        <a href="Footprint.html" class="navbar-brand mb-0 h1"><img class="d-inline-block align-top" src="CO2_Logo.png" width="30" height="30"> Footprint </a>
         <button type="button" data-toggle="collapse" data-target="#navbarNav" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -50,7 +55,7 @@
 <!-- NAVBAR Header End -->
 
 <div class="container-fluid">
-    <div class="row flex-nowrap">
+    <div id="Main-Menu" class="row flex-nowrap">
         <div class="p-2 mt-5 position-fixed" style="background: beige; height: 1000px">
             <a class="d-flex text-decoration-none mt-2 align-items-center">
                 <span class="fs-4 d-sm-inline position-fixed">Menu</span>
@@ -71,10 +76,18 @@
             </ul>
         </div>
         <!-- Content Area Start -->
-        <div class="row ml-5 pl-5 mt-5 pt-3 flex-wrap table-responsive">
+        <div id="Main-Content" class="row ml-5 pl-5 mt-5 pt-3 flex-wrap table-responsive">
             <div class="col-auto">
                 <div class="container-fluid">
-                    <a>Contact</a>
+                    <h4>Get in touch!</h4>
+                    <p></p>
+                    <p>Feel free to contact us with your concerns any time!</p>
+                    <br>
+                    <b> Footprint</b> <p></p>
+                    <p>Street: Footprint Avenue 1</p>
+                    <p>State: Sunstate 1234</p>
+                    <p>Country: World</p>
+                    <p>Email: contact@footprint.com</p>
                 </div>
             </div>
         </div>
@@ -84,9 +97,9 @@
 
 <footer style="background: white; bottom: 0; width: 100%; height: 60px; line-height: 60px;">
     <nav>
-        <ul class="text-right">
-            <li class="d-inline m-2"><a href="privacy.html" style="color: black">Datenschutz</a></li>
-            <li class="d-inline mr-4"><a href="imprint.html" style="color: black">Impressum</a></li>
+        <ul class="text-center">
+            <li class="d-inline m-2"><a href="privacy.html" style="color: black">Privacy</a></li>
+            <li class="d-inline mr-4"><a href="imprint.html" style="color: black">Imprint</a></li>
         </ul>
     </nav>
 </footer>
